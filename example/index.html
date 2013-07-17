@@ -8,17 +8,28 @@
     	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
 
+    .main {
+		margin: 0 auto;
+		width: 700px;
+		font-weight: bold;
+    }
+
     #title {
-    	font-size: 36px;
-    	font-weight: bold;
-    	text-align: center;
+    	color: orange;
     }
     </style>
 
 </head>
 <body>
 	
-	<div id="title">FUN</div>
+	<div class="main">
+		<h1>TURNUP.JS</h1>
+		<p>A jQuery plugin that, given a list of strings, continuously grabs one string randomly and "turns it up".</p>
+		<code>$('#title').turnup({
+			list: ['AWESOME', 'WONDERFUL', 'RIDICULOUS', 'MAGNIFICENT']
+		});</code>
+		<h1>TURNUP.JS IS <span id="title">FUN</span></h1>
+	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="../turnup.js"></script>
